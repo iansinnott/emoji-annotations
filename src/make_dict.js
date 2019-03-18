@@ -20,11 +20,13 @@ const parseDict = pipe(
       const character = attr.cp;
 
       // Skip all TTS for now
-      if (attr.tts) return dict;
+      if (attr.type === 'tts') return dict;
+
+      const values = val.split(' | ');
 
       return {
         ...dict,
-        [character]: val,
+        [character]: values,
       };
     }, {})
 );
