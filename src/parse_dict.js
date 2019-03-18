@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const xml2js = require('xml-js').xml2js;
-const { pipe, tap } = require('ramda');
+const { pipe } = require('ramda');
 
 const parsingOptions = {
   compact: true, // Just give me the TLDR of this XML
@@ -31,10 +31,4 @@ const parseDict = pipe(
     }, {})
 );
 
-const makeDict = pipe(
-  filepath => path.resolve(filepath),
-  filepath => fs.readFileSync(filepath, { encoding: 'utf8' }),
-  parseDict
-);
-
-module.exports = { parseDict, makeDict };
+module.exports = { parseDict };

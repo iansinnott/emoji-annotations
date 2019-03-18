@@ -1,4 +1,4 @@
-const { parseDict } = require('./make_dict.js');
+const { parseDict } = require('./parse_dict.js');
 
 describe('make_dict', () => {
   test('parseDict is a function', () => {
