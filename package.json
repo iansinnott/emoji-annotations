@@ -1,6 +1,6 @@
 {
   "name": "emoji-annotations",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Unicode CLDR emoji annotations",
   "main": "index.js",
   "repository": "git@github.com:iansinnott/emoji-annotations.git",
