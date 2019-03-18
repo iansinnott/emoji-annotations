@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-const lookup = require('../lib/lookup.js');
+const lookup = require('../bin/lookup.js');
 
 console.log(lookup(process.argv[2]));
